@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <div class="sidebar-left">
+      <div class="brand">
+        <img
+          class="logo"
+          src="res/icons/logo.png"
+        />
+        <p>AeroLink Pro</p>
+      </div>
+      <div class="main-settings">
+        <div>Home</div>
+        <div>WAN Settings</div>
+        <div>LAN Settings</div>
+        <div>WiFi Settings</div>
+        <div>VPN</div>
+      </div>
+      <div class="extended-settings">
+        <div>Settings</div>
+        <div>Firmware Update</div>
+        <div>Reset & Restart</div>
+        <div>Get Support</div>
+      </div>
+    </div>
+
+    <div class="main-wrapper">
+      <div class="header">
+        <label for="search">Search:</label>
+        <input type="search" />
+      </div>
+      <div class="content-wrapper">
+        <div class="settings-overview">
+          <p class="settings-header">Settings</p>
+          <div class="settings-cards">
+            <div class="settings-card">
+              <p>WiFi Settings</p>
+              <p>
+                Customize your wireless network name, password, security, and
+                channel for optimal performance.
+              </p>
+            </div>
+            <div class="settings-card">
+              <p>WAN Settings</p>
+              <p>
+                Configure your internet connection type, IP address, and DNS for
+                internet access.
+              </p>
+            </div>
+            <div class="settings-card">
+              <p>Parental Control</p>
+              <p>
+                Manage internet access for family members with time limits and
+                content filtering.
+              </p>
+            </div>
+            <div class="settings-card">
+              <p>IPTV</p>
+              <p>
+                Configure settings for your Internet Protocol Television service
+                to enable streaming.
+              </p>
+            </div>
+            <div class="settings-card">
+              <p>Backup and Restore</p>
+              <p>
+                Save and load your router configuration for easy setup and
+                recovery.
+              </p>
+            </div>
+            <div class="settings-card">
+              <p>Port Forwarding</p>
+              <p>
+                Direct specific internet traffic to devices on your local
+                network for services.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-right">
+          <div class="statistics-container">
+            <p class="statistics-header">Statistics</p>
+            <div class="statistics-info">
+              <div class="statistics-card">
+                <p>Data used this month</p>
+              </div>
+              <div class="statistics-card">
+                <p>WiFi clients</p>
+              </div>
+              <div class="statistics-card">
+                <p>LAN Clients</p>
+              </div>
+            </div>
+          </div>
+          <div class="model-container">
+            <p class="model-header">Model Information</p>
+            <div class="model-info">
+              <div>Model</div>
+              <div>Firmware version</div>
+              <div>Uptime</div>
+              <div>Is firmware latest?</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

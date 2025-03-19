@@ -1,0 +1,83 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.sidebar-left {
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.5;
+  background-color: #1992d4;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 3.5em;
+}
+
+.header {
+  background-color: white;
+  grid-column: 1;
+}
+
+.main-wrapper {
+  background-color: #e2e8f0;
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+}
+
+.content-wrapper {
+  display: grid;
+  padding: 0 30px 30px 30px;
+  gap: 20px;
+  place-content: start;
+}
+
+.statistics-header,
+.settings-header,
+.model-header {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.settings-overview {
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+}
+
+.settings-cards {
+  display: grid;
+  grid-template: repeat(3, minmax(150px, 1fr)) / repeat(2, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.settings-card {
+  background-color: white;
+  border-radius: 4px;
+  border-left: 10px solid orange;
+  padding: 10px 30px 10px 30px;
+}
+
+.sidebar-right {
+  grid-column: 2;
+  display: grid;
+}
+
+.statistics-info,
+.model-info {
+  background-color: white;
+  border-radius: 4px;
+}
