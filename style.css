@@ -158,6 +158,14 @@ body {
   padding: 10px 30px 10px 30px;
 }
 
+.settings-action-icons {
+  place-self: end;
+  & img {
+    height: 2.5em;
+    margin-left: 10px;
+  }
+}
+
 .sidebar-right {
   grid-column: 2;
   display: grid;
