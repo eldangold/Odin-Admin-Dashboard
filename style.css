@@ -157,6 +157,7 @@ body {
 
 .sidebar-right {
   grid-column: 2;
+  display: grid;
 }
 
 .statistics-info,
@@ -166,12 +167,10 @@ body {
 }
 
 .statistics-info {
-  display: grid;
   padding: 20px;
 }
 
 .model-info {
-  display: grid;
   padding: 20px;
 }
 
@@ -186,4 +185,8 @@ body {
 
 hr {
   width: 100%;
+}
+
+.model-container {
+  place-content: end;
 }
