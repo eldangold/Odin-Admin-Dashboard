@@ -23,7 +23,7 @@ body {
   gap: 5vh;
   justify-content: center;
 
-  &  p {
+  & p {
     margin: 10px 0 10px 0;
   }
 }
@@ -42,6 +42,80 @@ body {
 .header {
   background-color: white;
   grid-column: 1;
+  display: grid;
+  padding: 25px;
+  gap: 25px;
+}
+
+.header-top {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  place-content: space-between;
+}
+
+.search-bar {
+  display: grid;
+  grid-template-columns: min-content min-content;
+
+  & > img {
+    height: 2em;
+    margin-right: 20px;
+  }
+
+  & input {
+    border-radius: 3vw;
+    background-color: lightgray;
+    min-width: 20vw;
+    text-align: center;
+  }
+}
+
+.user-account-info {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  place-items: center;
+
+  & > img {
+    height: 2em;
+    margin-right: 20px;
+  }
+
+  & p {
+    margin: 0;
+    font-weight: bold;
+  }
+}
+
+.header-bottom {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  place-content: space-between;
+  place-items: center;
+
+  & .header-buttons {
+    height: 50%;
+  }
+
+  & button {
+    border-radius: 3vw;
+    border: none;
+    background-color: #554b42;
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    width: 10vw;
+  }
+}
+
+.user-greeting {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  place-items: center;
+
+  & > img {
+    height: 5em;
+    margin-right: 20px;
+  }
 }
 
 .main-wrapper {

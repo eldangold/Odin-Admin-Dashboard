@@ -1,147 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Admin Dashboard</title>
-  </head>
-  <body>
-    <div class="sidebar-left">
-      <div class="brand">
-        <img class="logo" src="res/icons/logo.png" />
-        <p>AeroLink Pro</p>
-      </div>
-      <div class="main-settings">
-        <div class="menu-element">
-          <img src="res/icons/home.png">
-          <p>Home (overview)</p>
-        </div>
-        <div class="menu-element">
-          <img src="res/icons/wan.png">
-          <p>WAN Settings</p>
-        </div>
-        <div class="menu-element">
-          <img src="res/icons/lan.png">
-          <p>LAN Settings</p>
-        </div>
-        <div class="menu-element">
-          <img src="res/icons/wifi.png">
-          <p>WiFi Settings</p>
-        </div>
-        <div class="menu-element">
-          <img src="res/icons/vpn.png" />
-          <p>VPN Settings</p>
-        </div>
-      </div>
-      <div class="extended-settings">
-        <div class="menu-element">
-          <img src="res/icons/settings.png">
-          <p>Other Settings</p>
-        </div>
-        <div class="menu-element">
-          <img src="res/icons/update.png">
-          <p>Firmware Update</p>
-        </div>
-        <div class="menu-element">
-          <img src="res/icons/reset-restart.png">
-          <p>Reset & Restart</p>
-        </div>
-        <div class="menu-element">
-          <img src="res/icons/support.png">
-          <p>Get Support</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="main-wrapper">
-      <div class="header">
-        <label for="search">Search:</label>
-        <input type="search" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Admin Dashboard</title>
+</head>
+
+<body>
+  <div class="sidebar-left">
+    <div class="brand">
+      <img class="logo" src="res/icons/logo.png" />
+      <p>AeroLink Pro</p>
+    </div>
+    <div class="main-settings">
+      <div class="menu-element">
+        <img src="res/icons/home.png">
+        <p>Home (overview)</p>
       </div>
-      <div class="content-wrapper">
-        <div class="settings-overview">
-          <p class="settings-header">Settings</p>
-          <div class="settings-cards">
-            <div class="settings-card">
-              <p>WiFi Settings</p>
-              <p>
-                Customize your wireless network name, password, security, and
-                channel for optimal performance.
-              </p>
+      <div class="menu-element">
+        <img src="res/icons/wan.png">
+        <p>WAN Settings</p>
+      </div>
+      <div class="menu-element">
+        <img src="res/icons/lan.png">
+        <p>LAN Settings</p>
+      </div>
+      <div class="menu-element">
+        <img src="res/icons/wifi.png">
+        <p>WiFi Settings</p>
+      </div>
+      <div class="menu-element">
+        <img src="res/icons/vpn.png" />
+        <p>VPN Settings</p>
+      </div>
+    </div>
+    <div class="extended-settings">
+      <div class="menu-element">
+        <img src="res/icons/settings.png">
+        <p>Other Settings</p>
+      </div>
+      <div class="menu-element">
+        <img src="res/icons/update.png">
+        <p>Firmware Update</p>
+      </div>
+      <div class="menu-element">
+        <img src="res/icons/reset-restart.png">
+        <p>Reset & Restart</p>
+      </div>
+      <div class="menu-element">
+        <img src="res/icons/support.png">
+        <p>Get Support</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-wrapper">
+    <div class="header">
+      <div class="header-top">
+        <div class="search-bar">
+          <img src="res/icons/search.png">
+          <input type="search" placeholder="Search router's settings" />
+        </div>
+        <div class="user-account-info">
+          <img src="res/icons/logout.png">
+          <img src="res/icons/user.png">
+          <p>John Doe</p>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="user-greeting">
+          <img src="res/icons/user.png">
+          <p>Welcome,<br>John Doe (role: admin)</p>
+        </div>
+        <div class="header-buttons">
+          <button>Speedtest</button>
+          <button>Ping</button>
+          <button>Logs</button>
+        </div>
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <div class="settings-overview">
+        <p class="settings-header">Settings</p>
+        <div class="settings-cards">
+          <div class="settings-card">
+            <p>WiFi Settings</p>
+            <p>
+              Customize your wireless network name, password, security, and
+              channel for optimal performance.
+            </p>
+          </div>
+          <div class="settings-card">
+            <p>WAN Settings</p>
+            <p>
+              Configure your internet connection type, IP address, and DNS for
+              internet access.
+            </p>
+          </div>
+          <div class="settings-card">
+            <p>Parental Control</p>
+            <p>
+              Manage internet access for family members with time limits and
+              content filtering.
+            </p>
+          </div>
+          <div class="settings-card">
+            <p>IPTV</p>
+            <p>
+              Configure settings for your Internet Protocol Television service
+              to enable streaming.
+            </p>
+          </div>
+          <div class="settings-card">
+            <p>Backup and Restore</p>
+            <p>
+              Save and load your router configuration for easy setup and
+              recovery.
+            </p>
+          </div>
+          <div class="settings-card">
+            <p>Port Forwarding</p>
+            <p>
+              Direct specific internet traffic to devices on your local
+              network for services.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-right">
+        <div class="statistics-container">
+          <p class="statistics-header">Statistics</p>
+          <div class="statistics-info">
+            <div class="statistics-card">
+              <p>Data used this month</p>
+              <hr>
+              <p>Data usage monitoring is disabled.</p>
             </div>
-            <div class="settings-card">
-              <p>WAN Settings</p>
-              <p>
-                Configure your internet connection type, IP address, and DNS for
-                internet access.
-              </p>
+            <div class="statistics-card">
+              <p>WiFi clients</p>
+              <hr>
+              <p>30 active clients (max. 128)</p>
             </div>
-            <div class="settings-card">
-              <p>Parental Control</p>
-              <p>
-                Manage internet access for family members with time limits and
-                content filtering.
-              </p>
-            </div>
-            <div class="settings-card">
-              <p>IPTV</p>
-              <p>
-                Configure settings for your Internet Protocol Television service
-                to enable streaming.
-              </p>
-            </div>
-            <div class="settings-card">
-              <p>Backup and Restore</p>
-              <p>
-                Save and load your router configuration for easy setup and
-                recovery.
-              </p>
-            </div>
-            <div class="settings-card">
-              <p>Port Forwarding</p>
-              <p>
-                Direct specific internet traffic to devices on your local
-                network for services.
-              </p>
+            <div class="statistics-card">
+              <p>LAN Clients</p>
+              <hr>
+              <p>No LAN Clients active</p>
             </div>
           </div>
         </div>
-        <div class="sidebar-right">
-          <div class="statistics-container">
-            <p class="statistics-header">Statistics</p>
-            <div class="statistics-info">
-              <div class="statistics-card">
-                <p>Data used this month</p>
-                <hr>
-                <p>Data usage monitoring is disabled.</p>
-              </div>
-              <div class="statistics-card">
-                <p>WiFi clients</p>
-                <hr>
-                <p>30 active clients (max. 128)</p>
-              </div>
-              <div class="statistics-card">
-                <p>LAN Clients</p>
-                <hr>
-                <p>No LAN Clients active</p>
-              </div>
-            </div>
-          </div>
-          <div class="model-container">
-            <p class="model-header">Model Information</p>
-            <div class="model-info">
-              <p>Model: AeroLink Pro</p>
-              <hr>
-              <p>Firmware version: 2.1.5</p>
-              <hr>
-              <p>Uptime: 30 days, 1 h, 30 m</p>
-              <hr>
-              <p>All updates are installed: Yes</p>
-            </div>
+        <div class="model-container">
+          <p class="model-header">Model Information</p>
+          <div class="model-info">
+            <p>Model: AeroLink Pro</p>
+            <hr>
+            <p>Firmware version: 2.1.5</p>
+            <hr>
+            <p>Uptime: 30 days, 1 h, 30 m</p>
+            <hr>
+            <p>All updates are installed: Yes</p>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
