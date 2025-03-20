@@ -110,3 +110,7 @@ body {
     height: 1.5em;
   }
 }
+
+hr {
+  width: 100%;
+}
