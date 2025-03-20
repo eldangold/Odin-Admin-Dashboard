@@ -121,7 +121,6 @@ body {
 .main-wrapper {
   background-color: #e2e8f0;
   display: grid;
-  grid-template-rows: 1fr 6fr;
 }
 
 .content-wrapper {
