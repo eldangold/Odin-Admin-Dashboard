@@ -121,6 +121,7 @@ body {
 .main-wrapper {
   background-color: #e2e8f0;
   display: grid;
+  grid-template-rows: min-content minmax(500px, 4fr);
 }
 
 .content-wrapper {
@@ -137,8 +138,10 @@ body {
 }
 
 .settings-overview {
-  display: flex;
+  xdisplay: flex;
   flex-direction: column;
+  display: grid;
+  grid-template-rows: min-content;
 }
 
 .settings-cards {
