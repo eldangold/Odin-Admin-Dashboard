@@ -7,7 +7,6 @@ html {
 }
 
 body {
-  height: 100%;
   display: grid;
   grid-template-columns: 1fr 4fr;
 }
@@ -36,14 +35,13 @@ body {
 .main-wrapper {
   background-color: #e2e8f0;
   display: grid;
-  grid-template-rows: 1fr 10fr;
+  grid-template-rows: 1fr 6fr;
 }
 
 .content-wrapper {
   display: grid;
   padding: 0 30px 30px 30px;
   gap: 20px;
-  place-content: start;
 }
 
 .statistics-header,
@@ -54,14 +52,15 @@ body {
 }
 
 .settings-overview {
-  display: grid;
-  grid-template-rows: 1fr 10fr;
+  display: flex;
+  flex-direction: column;
 }
 
 .settings-cards {
   display: grid;
   grid-template: repeat(3, minmax(150px, 1fr)) / repeat(2, minmax(150px, 1fr));
   gap: 20px;
+  height: 100%;
 }
 
 .settings-card {
@@ -73,11 +72,20 @@ body {
 
 .sidebar-right {
   grid-column: 2;
-  display: grid;
 }
 
 .statistics-info,
 .model-info {
   background-color: white;
   border-radius: 4px;
+}
+
+.statistics-info {
+  display: grid;
+  padding: 20px;
+}
+
+.model-info {
+  display: grid;
+  padding: 20px;
 }
