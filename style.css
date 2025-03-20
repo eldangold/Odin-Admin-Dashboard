@@ -12,19 +12,27 @@ body {
 }
 
 .sidebar-left {
+  padding-top: 2vh;
+  color: white;
   font-weight: bold;
   font-size: 1.5em;
   line-height: 1.5;
-  background-color: #1992d4;
+  background-color: #554b42;
   display: grid;
   grid-template-rows: repeat(3, min-content);
   gap: 5vh;
   justify-content: center;
+
+  &  p {
+    margin: 10px 0 10px 0;
+  }
 }
 
 .brand {
   display: flex;
   align-items: center;
+  background-color: orangered;
+  border-radius: 4px;
 }
 
 .logo {
@@ -92,4 +100,13 @@ body {
 .model-info {
   display: grid;
   padding: 20px;
+}
+
+.menu-element {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  & > img {
+    height: 1.5em;
+  }
 }
