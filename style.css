@@ -208,3 +208,12 @@ hr {
 .model-container {
   place-content: end;
 }
+
+.icon-credit {
+  place-self: end center;
+
+  & a {
+    text-decoration: none;
+    color: #1392de;
+  }
+}
